@@ -1,0 +1,25 @@
+
+
+<div class = "new_container">
+    <div class = "new_form">
+    <h3>予定の新規追加</h3>
+
+
+
+    <%= form_tag("/posts", method: :post)  do %>
+    <p>タイトル</p>
+    <input type = "text" name = "title" value = "タイトル">
+    <p>開始日</p>
+    <input type = "date" name = "start_date" value = "---- / -- / --">
+    <p>終了日</p>
+    <input type = "date" name = "finish_date" value = "---- / -- / --">
+    <p>スケジュールメモ</p>
+    <textarea name = "memo"></textarea>
+    <p><input type = "button" value = "登録する" ></p>
+
+
+
+    <% end %>
+    </div>
+
+</div>
