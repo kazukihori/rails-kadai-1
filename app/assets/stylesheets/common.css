@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+
+
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    padding: 15px;
+
+}
+
+.title_name{
+ margin: 0;
+ text-align: center;
+ color: #fff;
+ font-size: 15px;
+
+}
+
+.index_container{
+    margin: 150px;
+}
+
+.index_title{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
