@@ -22,8 +22,12 @@ header {
 }
 
 .index_container{
+    margin: 150px;
+}
+
+.index_title{
     width: 100%;
-    margin: 20px;
+    margin: 10px 0;
     display: flex;
     justify-content: space-between;
 }

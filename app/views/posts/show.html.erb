@@ -1,0 +1,46 @@
+
+<div class= "show_container">
+    <div class ="show_title">
+        <h3><%= link_to "予定一覧" ,"/posts" %></h3>
+        
+    </div>
+
+
+
+
+    <h2>><%= @post.title %></h2>
+
+    <%= link_to "編集" , edit_post_path(@post.id) %>
+
+    <table>
+
+    <thead>
+        <tr>
+        <th>開始日</th>
+        <th>終了日</th>
+        <th>終日</th>
+        <th>スケジュールメモ</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+        <td><%= @post.start_date %></td>
+        <td><%= @post.finish_date %></td>
+        <td><% if @post.all_date %>⚪︎
+            <% else %>
+            <% end %>
+            </td>
+        <td><%= @post.memo %></td>
+        </tr>
+    </tbody>
+
+
+    </table>
+</div>
+
+    
+
+
+
+
